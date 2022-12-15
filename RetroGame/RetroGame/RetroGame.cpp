@@ -120,6 +120,7 @@ void Logic()
     
         switch (dir) // sets direction and moves in that direction
         {
+
         case LEFT:
             x--;
             break;
@@ -134,6 +135,7 @@ void Logic()
             break;
         default:
             break;
+
         }
     
    
