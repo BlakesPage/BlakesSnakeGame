@@ -302,10 +302,14 @@ int main()
     Setup();
     while (!window.ShouldClose())
     {
-        timer += GetFrameTime();
+        timer += GetFrameTime(); // game timer
         BeginDrawing();
+
         Draw();
+
         Input();
+
+
         if (timer > timeDelay && !gameOver) // adds delay to the logic so the snake will move after the set time delay
         {
             Logic();
